@@ -51,6 +51,13 @@ p {
     width: 262px;
     object-fit: contain;
     margin: .3rem 0rem;
+    transition: all 2s ease-in-out;
+
+    &:hover {
+        outline: 3px solid orange;
+        outline-offset: 20px;
+        transform: translateY(-10px);
+    }
 }
 
 .about-container {
