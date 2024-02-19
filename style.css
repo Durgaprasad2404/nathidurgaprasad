@@ -89,6 +89,11 @@ p {
         outline: 2px solid rgb(129, 8, 28);
         transform: translateY(-5px);
     }
+
+    &:active {
+        background-color: aquamarine;
+        transform: rotate(10deg);
+    }
 }
 
 .whatsapp {
