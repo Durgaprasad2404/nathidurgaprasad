@@ -2,6 +2,7 @@ body {
     scroll-behavior: smooth;
     padding: 0px;
     margin: 0px;
+
 }
 
 * {
@@ -17,13 +18,13 @@ a {
 .name-scroll {
     margin-top: .3rem;
     font-size: x-large;
-    font-weight: 600;
-    color: rgb(1, 11, 0);
-    background-color: khaki;
+    color: white;
+    background-color: black;
+    padding: .5rem 0rem;
 }
 
 p {
-    font-size: x-large;
+    font-size: large;
     margin-top: .7rem;
 }
 
@@ -55,7 +56,7 @@ p {
     border-radius: 3rem;
     height: 262px;
     width: 262px;
-    object-fit: contain;
+    object-fit: fill;
     margin: .3rem 0rem;
     transition: all 2s ease-in-out;
 
@@ -140,20 +141,6 @@ p {
     }
 }
 
-.github {
-    color: black;
-    margin: .3rem .4rem;
-    font-size: larger;
-    transition: all 1s;
-    border-radius: 10px;
-    padding: .5rem;
-    border: 2px double #000;
-
-    &:hover {
-        transform: translateY(-10px);
-    }
-}
-
 .email {
     color: black;
     margin: .3rem .4rem;
@@ -176,6 +163,20 @@ p {
     border-radius: 10px;
     padding: .5rem;
     border: 2px double #0077b5;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.github {
+    color: #000;
+    margin: .3rem .4rem;
+    font-size: larger;
+    transition: all 1s;
+    border-radius: 10px;
+    padding: .5rem;
+    border: 2px double #000;
 
     &:hover {
         transform: translateY(-10px);
@@ -213,7 +214,36 @@ ul {
     list-style-type: none;
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:576px) {
+    .home-img {
+        height: 162px;
+        width: 162px;
+    }
+
+    .home-container {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .about {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .home-img {
+        height: 262px;
+        width: 262px;
+    }
+
     .home-container {
         height: fit-content;
         flex-direction: column;
@@ -243,4 +273,141 @@ ul {
         font-size: medium;
     }
 
+}
+
+@media screen and (min-width:769px) and (max-width:998px) {
+    .home-img {
+        height: 262px;
+        width: 262px;
+    }
+
+    .about-heading {
+        font-size: xx-large;
+    }
+
+    p {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width:998px) and (max-width:1200px) {
+    .home-img {
+        height: 462px;
+        width: 462px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+    .designation {
+        font-size: 2.2rem;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .about-heading {
+        font-size: 5rem;
+    }
+
+    .whatsapp {
+        font-size: x-large;
+    }
+
+    .facebook {
+        font-size: x-large;
+    }
+
+    .instagram {
+        font-size: x-large;
+    }
+
+    .email {
+        font-size: x-large;
+    }
+
+    .linkdin {
+        font-size: x-large;
+    }
+
+    .github {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .home-container {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-element {
+        font-size: 3rem;
+    }
+
+    .name-scroll {
+        font-size: 4rem;
+    }
+
+    .home-img {
+        height: 662px;
+        width: 662px;
+    }
+
+    p {
+        font-size: 5rem;
+    }
+
+    .designation {
+        font-size: 3.2rem;
+    }
+
+    .name {
+        font-size: 5rem;
+    }
+
+    .about-heading {
+        font-size: 6rem;
+    }
+
+    .whatsapp {
+        font-size: 3rem;
+    }
+
+    .facebook {
+        font-size: 3rem;
+    }
+
+    .instagram {
+        font-size: 3rem;
+    }
+
+    .email {
+        font-size: 3rem;
+    }
+
+    .linkdin {
+        font-size: 3rem;
+    }
+
+    .github {
+        font-size: 3rem;
+    }
+
+    .img-con {
+        margin: 4rem .2rem;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
 }
