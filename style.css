@@ -17,7 +17,8 @@ a {
 .name-scroll {
     margin-top: .3rem;
     font-size: x-large;
-    color: rgb(38, 193, 24);
+    font-weight: 600;
+    color: rgb(1, 11, 0);
     background-color: khaki;
 }
 
@@ -139,7 +140,21 @@ p {
     }
 }
 
-.twitter {
+.github {
+    color: black;
+    margin: .3rem .4rem;
+    font-size: larger;
+    transition: all 1s;
+    border-radius: 10px;
+    padding: .5rem;
+    border: 2px double #000;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.email {
     color: black;
     margin: .3rem .4rem;
     font-size: larger;
