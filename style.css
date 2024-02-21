@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     scroll-behavior: smooth;
     padding: 0px;
@@ -6,6 +8,7 @@ body {
 }
 
 * {
+    font-family: "Poppins", sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -17,24 +20,25 @@ a {
 
 .name-scroll {
     margin-top: .3rem;
-    font-size: x-large;
+    font-size: large;
     color: white;
     background-color: black;
-    padding: .5rem 0rem;
+    padding: .3rem 0rem;
 }
 
 p {
     font-size: large;
     margin-top: .7rem;
+    padding: 1.3rem;
 }
 
 .name {
-    margin: 1rem 0rem;
+    margin: .5rem 0rem;
 }
 
 .designation {
     text-align: center;
-    margin: .8rem 0rem;
+    margin: .4rem 0rem;
 }
 
 .home-container {
@@ -49,6 +53,7 @@ p {
 }
 
 .img-con {
+    margin: 1.2rem .2rem;
     text-align: center;
 }
 
@@ -170,13 +175,13 @@ p {
 }
 
 .github {
-    color: #000;
+    color: #0077b5;
     margin: .3rem .4rem;
     font-size: larger;
     transition: all 1s;
     border-radius: 10px;
     padding: .5rem;
-    border: 2px double #000;
+    border: 2px double #0077b5;
 
     &:hover {
         transform: translateY(-10px);
@@ -187,31 +192,25 @@ p {
     display: none;
     background-color: antiquewhite;
     flex-direction: column;
+
 }
 
 .project-heading {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
     margin: .5rem 1rem;
 }
 
 .project-name {
-    font-size: x-large;
-    font-weight: 700;
+    font-size: large;
     color: blue;
-    margin: .5rem 1.5rem;
+    margin: .1rem 1.5rem;
     width: fit-content;
+    padding: 0.4rem;
 
     &:active {
         cursor: progress;
     }
-}
-
-ul {
-    background-color: aquamarine;
-    margin: 1rem;
-    list-style-type: none;
 }
 
 @media screen and (max-width:576px) {
@@ -229,6 +228,10 @@ ul {
     }
 
     p {
+        font-size: small;
+    }
+
+    .project-name {
         font-size: small;
     }
 
@@ -282,11 +285,14 @@ ul {
     }
 
     .about-heading {
+        text-align: center;
+        margin-top: .8rem;
         font-size: xx-large;
     }
 
     p {
-        font-size: x-large;
+
+        font-size: large;
     }
 }
 
@@ -297,7 +303,7 @@ ul {
     }
 
     p {
-        font-size: x-large;
+        font-size: large;
     }
 
     .designation {
@@ -309,35 +315,35 @@ ul {
     }
 
     .about-heading {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .whatsapp {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .facebook {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .instagram {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .email {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .linkdin {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     .github {
-        font-size: x-large;
+        font-size: xx-large;
     }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1200px) {
     .home-container {
         height: fit-content;
         flex-direction: column;
@@ -348,60 +354,67 @@ ul {
 
     .about {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .btn-element {
-        font-size: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .about-con2 {
+        text-align: center;
     }
 
     .name-scroll {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .home-img {
-        height: 662px;
-        width: 662px;
+        height: 462px;
+        width: 462px;
     }
 
     p {
-        font-size: 5rem;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+        text-align: left;
     }
 
     .designation {
-        font-size: 3.2rem;
+        font-size: 1.9rem;
     }
 
     .name {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
 
     .about-heading {
-        font-size: 6rem;
+        text-align: center;
+        font-size: 4rem;
     }
 
     .whatsapp {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .facebook {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .instagram {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .email {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .linkdin {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .github {
-        font-size: 3rem;
+        font-size: 1.6rem;
     }
 
     .img-con {
