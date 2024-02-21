@@ -78,6 +78,9 @@ p {
 
 .about {
     width: 350px;
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
 }
 
 
@@ -422,5 +425,15 @@ p {
         display: flex;
         align-items: center;
         gap: 5rem;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
