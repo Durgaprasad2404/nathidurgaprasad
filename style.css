@@ -13,6 +13,27 @@ body {
     margin: 0px;
 }
 
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.navContainer {
+    background-color: antiquewhite;
+    border-bottom: 1px solid #000;
+}
+
+.nav-link {
+    font-size: large;
+    border-radius: 15px;
+
+    &:hover {
+        font-weight: bolder;
+        font-size: larger;
+        background-color: #128c7e;
+    }
+}
+
 a {
     text-decoration: none;
     width: fit-content;
@@ -26,11 +47,6 @@ a {
     padding: .3rem 0rem;
 }
 
-p {
-    font-size: large;
-    margin-top: .7rem;
-    padding: 1.3rem;
-}
 
 .name {
     margin: .5rem 0rem;
@@ -47,8 +63,10 @@ p {
     width: 100%;
     background-color: antiquewhite;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
 
 }
 
@@ -72,15 +90,12 @@ p {
     }
 }
 
-.about-container {
-    align-self: center;
-}
 
 .about {
-    width: 350px;
-    animation: fade linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -191,8 +206,7 @@ p {
     }
 }
 
-#projects {
-    display: none;
+#ProjectsContainer {
     background-color: antiquewhite;
     flex-direction: column;
 
@@ -216,6 +230,25 @@ p {
     }
 }
 
+#SkillsContainer {
+    background-color: rgb(145, 85, 6);
+}
+
+.skills {
+    font-style: italic;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #dee2e614;
+    letter-spacing: 20px;
+}
+
+.mySkills {
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 5px;
+}
+
 @media screen and (max-width:576px) {
     .home-img {
         height: 162px;
@@ -224,10 +257,7 @@ p {
 
     .home-container {
         height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+
     }
 
     p {
@@ -242,6 +272,11 @@ p {
         width: 100%;
         text-align: center;
     }
+
+    .skills {
+        font-size: 6rem;
+        letter-spacing: 15px;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -252,10 +287,7 @@ p {
 
     .home-container {
         height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+
     }
 
     p {
@@ -267,9 +299,6 @@ p {
         text-align: center;
     }
 
-    .para {
-        margin: .4rem .8rem;
-    }
 
     .about-heading {
         text-align: center;
@@ -285,6 +314,11 @@ p {
     .home-img {
         height: 262px;
         width: 262px;
+    }
+
+    .home-container {
+        height: fit-content;
+
     }
 
     .about-heading {
@@ -303,6 +337,11 @@ p {
     .home-img {
         height: 462px;
         width: 462px;
+    }
+
+    .home-container {
+        height: fit-content;
+
     }
 
     p {
@@ -344,15 +383,19 @@ p {
     .github {
         font-size: xx-large;
     }
+
+    .img-con {
+        margin: 4rem .2rem;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
 }
 
 @media screen and (min-width:1200px) {
     .home-container {
         height: fit-content;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+
     }
 
     .about {
@@ -428,12 +471,38 @@ p {
     }
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
+.progress-bar {
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform-origin: left;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
     }
 
-    to {
-        opacity: 1;
+    100% {
+        transform: scaleX(1);
     }
+}
+
+.custom-shape-divider-top-1711955817 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1711955817 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1711955963 .shape-fill {
+    fill: antiquewhite;
 }
