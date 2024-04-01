@@ -36,7 +36,6 @@ body {
 
 a {
     text-decoration: none;
-    width: fit-content;
 }
 
 .name-scroll {
@@ -206,30 +205,6 @@ a {
     }
 }
 
-#ProjectsContainer {
-    background-color: antiquewhite;
-    flex-direction: column;
-
-}
-
-.project-heading {
-    font-size: x-large;
-    font-weight: 800;
-    margin: .5rem 1rem;
-}
-
-.project-name {
-    font-size: large;
-    color: blue;
-    margin: .1rem 1.5rem;
-    width: fit-content;
-    padding: 0.4rem;
-
-    &:active {
-        cursor: progress;
-    }
-}
-
 #SkillsContainer {
     background-color: rgb(145, 85, 6);
 }
@@ -247,6 +222,44 @@ a {
     font-weight: 700;
     -webkit-text-stroke: 1px #000;
     letter-spacing: 5px;
+}
+
+#ProjectsContainer {
+    background-color: antiquewhite;
+}
+
+.ProjectsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-heading {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.project-name {
+    font-size: large;
+    color: blue;
+
+    &:active {
+        cursor: progress;
+    }
+}
+
+.projectsCon {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projectsCover {
+    height: 200px;
+    width: 100%;
+    aspect-ratio: 3/2;
 }
 
 @media screen and (max-width:576px) {
@@ -487,7 +500,7 @@ a {
     }
 }
 
-.custom-shape-divider-top-1711955817 {
+.custom-shape-divider-top-1711955861 {
     position: absolute;
     top: 0;
     left: 0;
@@ -496,7 +509,27 @@ a {
     line-height: 0;
 }
 
-.custom-shape-divider-top-1711955817 svg {
+.custom-shape-divider-top-1711955861 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1711955961 .shape-fill {
+    fill: antiquewhite;
+}
+
+.custom-shape-divider-top-1711955863 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1711955863 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
@@ -504,5 +537,5 @@ a {
 }
 
 .custom-shape-divider-top-1711955963 .shape-fill {
-    fill: antiquewhite;
+    fill: rgb(145, 85, 6);
 }
