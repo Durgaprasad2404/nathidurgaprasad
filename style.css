@@ -242,7 +242,7 @@ a {
 
 .project-name {
     font-size: large;
-    color: blue;
+    color: white;
 
     &:active {
         cursor: progress;
@@ -266,6 +266,11 @@ a {
     .home-img {
         height: 162px;
         width: 162px;
+    }
+
+    .projectsCon {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .home-container {
