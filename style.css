@@ -232,6 +232,21 @@ a {
     background-color: antiquewhite;
 }
 
+.projects {
+    font-style: italic;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #dee2e614;
+    letter-spacing: 10px;
+}
+
+.myProjects {
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 5px;
+}
+
 .ProjectsContainer {
     display: flex;
     flex-direction: column;
@@ -286,6 +301,14 @@ a {
     .projectsCon {
         flex-direction: column;
         flex-wrap: nowrap;
+    }
+
+    .projects {
+        font-size: 4rem;
+    }
+
+    .myProjects {
+        font-size: 30px;
     }
 
     .home-container {
