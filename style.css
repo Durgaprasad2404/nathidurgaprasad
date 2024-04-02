@@ -205,6 +205,10 @@ a {
     }
 }
 
+.main-heading {
+    text-align: center;
+}
+
 #SkillsContainer {
     background-color: rgb(145, 85, 6);
 }
@@ -231,17 +235,13 @@ a {
 .ProjectsContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.project-heading {
-    font-size: 50px;
-}
 
 .project-name {
-    font-size: large;
-    color: rgb(1, 0, 0);
+    font-size: larger;
+    color: #fff;
 
     &:active {
         cursor: progress;
@@ -250,6 +250,25 @@ a {
 
 .projectsCon {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.proCon1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.proCon2 {
+    display: flex;
+    gap: 2rem;
+}
+
+.proCon3 {
+    display: flex;
+    gap: 2rem;
 }
 
 .projectsCover {
@@ -291,6 +310,21 @@ a {
         font-size: 6rem;
         letter-spacing: 15px;
     }
+
+    .proCon1 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .proCon2 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .proCon3 {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -321,7 +355,6 @@ a {
     .btn-element {
         font-size: medium;
     }
-
 }
 
 @media screen and (min-width:769px) and (max-width:998px) {
