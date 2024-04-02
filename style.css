@@ -237,12 +237,11 @@ a {
 
 .project-heading {
     font-size: 50px;
-    font-weight: 800;
 }
 
 .project-name {
     font-size: large;
-    color: white;
+    color: rgb(1, 0, 0);
 
     &:active {
         cursor: progress;
@@ -250,10 +249,7 @@ a {
 }
 
 .projectsCon {
-    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
 }
 
 .projectsCover {
@@ -318,7 +314,7 @@ a {
     }
 
 
-    .about-heading {
+    .main-heading {
         text-align: center;
     }
 
@@ -339,7 +335,7 @@ a {
 
     }
 
-    .about-heading {
+    .main-heading {
         text-align: center;
         margin-top: .8rem;
         font-size: xx-large;
@@ -374,7 +370,7 @@ a {
         font-size: 3rem;
     }
 
-    .about-heading {
+    .main-heading {
         font-size: 4rem;
     }
 
@@ -452,7 +448,7 @@ a {
         font-size: 3.5rem;
     }
 
-    .about-heading {
+    .main-heading {
         text-align: center;
         font-size: 4rem;
     }
