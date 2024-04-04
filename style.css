@@ -290,6 +290,30 @@ a {
     height: 200px;
     width: 100%;
     aspect-ratio: 3/2;
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+#ContactContainer {
+    background-color: rgb(145, 85, 6);
+}
+
+.contact {
+    font-style: italic;
+    font-size: 10rem;
+    font-weight: 600;
+    color: #dee2e614;
+    letter-spacing: 10px;
+}
+
+.contactMe {
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 5px;
 }
 
 @media screen and (max-width:576px) {
@@ -303,12 +327,24 @@ a {
         flex-wrap: nowrap;
     }
 
+    .skills {
+        font-size: 9rem;
+    }
+
     .projects {
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
 
     .myProjects {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    .contact {
+        font-size: 3.2rem;
+    }
+
+    .contactMe {
+        font-size: 20px;
     }
 
     .home-container {
@@ -557,42 +593,9 @@ a {
     }
 }
 
-.custom-shape-divider-top-1711955861 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1711955861 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1711955961 .shape-fill {
-    fill: antiquewhite;
-}
-
-.custom-shape-divider-top-1711955863 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1711955863 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-}
-
-.custom-shape-divider-top-1711955963 .shape-fill {
-    fill: rgb(145, 85, 6);
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
 }
