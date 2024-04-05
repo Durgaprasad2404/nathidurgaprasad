@@ -91,8 +91,31 @@
             </div>
         </div>
     </div>
-
-
+    <div id="EducationContainer" class="py-5">
+        <div class="Education">
+            <h1 class="text-center font-weight-bold mb-4">My Education</h1>
+            <div class="my-4 mx-2">
+                <h4><i class="fa-regular fa-circle-dot points"></i> Master of Business Administration (Finance)</h4>
+                <i class="ms-2 p-2">PV Ram Reddy PG College,Ibrahimpatnam | 2020-22</i>
+            </div>
+            <div class="my-4 mx-2">
+                <h3><i class="fa-regular fa-circle-dot points"></i> Bachelor of Science (MPG)</h3>
+                <i class="ms-2 p-2">Nagarjuna Government College,Nalgonda | 2017-20</i>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="Experience">
+            <h1 class="text-center font-weight-bold mb-4">My Experience</h1>
+            <div class="my-4 mx-2">
+                <h4><i class="fa-regular fa-circle-dot points"></i> Master of Business Administration (Finance)</h4>
+                <i class="ms-2 p-2">PV Ram Reddy PG College,Ibrahimpatnam | 2020-22</i>
+            </div>
+            <div class="my-4 mx-2">
+                <h3><i class="fa-regular fa-circle-dot points"></i> Bachelor of Science (MPG)</h3>
+                <i class="ms-2 p-2">Nagarjuna Government College,Nalgonda | 2017-20</i>
+            </div>
+        </div>
+    </div>
     <div id="SkillsContainer">
         <div class="">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -300,31 +323,25 @@
                         data-aos-duration="2000">Contact Me</h1>
                 </div>
                 <div>
-                    <form name="sentMessage" id="contactForm">
+                    <form name="sentMessage" id="contactForm" onsubmit="emailSend();reset();return false;">
                         <div class="d-flex justify-content-stretch">
                             <div class="control-group w-50 me-2">
-                                <input type="text" class="form-control px-4 py-3" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name"
-                                    fdprocessedid="tir85m">
+                                <input type="text" class="form-control px-4 py-3" id="name" name="name"
+                                    placeholder="Your Name" required="required"
+                                    data-validation-required-message="Please enter your name" fdprocessedid="tir85m">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group w-50">
-                                <input type="email" class="form-control px-4 py-3" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email"
-                                    fdprocessedid="mpqdk">
+                                <input type="email" class="form-control px-4 py-3" id="email" name="email"
+                                    placeholder="Your Email" required="required"
+                                    data-validation-required-message="Please enter your email" fdprocessedid="mpqdk">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject"
-                                fdprocessedid="9ybu8">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
                             <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
+                                required="required" data-validation-required-message="Please enter your message"
+                                name="message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
@@ -336,6 +353,11 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div>
+            <img src="" alt="#" class="" />
+        </div>
+    </footer>
     <marquee behavior="alternate" direction="right" class="name-scroll"><i class="fa-solid fa-phone"></i>
         +91 8464081814</marquee>
 
@@ -352,6 +374,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script>
         AOS.init();
     </script>

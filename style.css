@@ -228,6 +228,32 @@ a {
     letter-spacing: 5px;
 }
 
+#EducationContainer {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.Education {}
+
+.Experience {}
+
+.line {
+    height: 240px;
+    width: 2px;
+    border: 2px solid #000;
+}
+
+.points {
+    transition: all 1s;
+}
+
+.points:hover {
+    color: #316FF6;
+}
+
+
+
 #ProjectsContainer {
     background-color: antiquewhite;
 }
@@ -384,6 +410,13 @@ a {
         flex-direction: column;
         gap: 2rem;
     }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -414,6 +447,14 @@ a {
     .btn-element {
         font-size: medium;
     }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+
+
 }
 
 @media screen and (min-width:769px) and (max-width:998px) {
@@ -437,9 +478,16 @@ a {
 
         font-size: large;
     }
+
+    .line {
+        height: 2px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+
 }
 
-@media screen and (min-width:998px) and (max-width:1200px) {
+@media screen and (min-width:999px) and (max-width:1200px) {
     .home-img {
         height: 462px;
         width: 462px;
@@ -496,9 +544,14 @@ a {
         align-items: center;
         gap: 5rem;
     }
+
+    #EducationContainer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1201px) {
     .home-container {
         height: fit-content;
 
@@ -527,7 +580,6 @@ a {
     }
 
     p {
-        padding: 1.5rem;
         font-size: 1.8rem;
         text-align: left;
     }
@@ -574,6 +626,11 @@ a {
         display: flex;
         align-items: center;
         gap: 5rem;
+    }
+
+    #EducationContainer {
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
