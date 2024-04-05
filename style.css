@@ -246,12 +246,34 @@ a {
 
 .points {
     transition: all 1s;
+    cursor: pointer;
 }
 
 .points:hover {
     color: #316FF6;
+    transform: scale(1.5);
 }
 
+.eHeading {
+    padding: 10px 25px;
+    width: max-content;
+    font-weight: 700;
+    border: 2px solid #128c7e;
+    border-radius: 10px;
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+h4 {
+    transition: all 2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
 
 
 #ProjectsContainer {
@@ -342,6 +364,18 @@ a {
     letter-spacing: 5px;
 }
 
+#footer {
+    background-color: antiquewhite;
+}
+
+.footerContainer {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:576px) {
     .home-img {
         height: 162px;
@@ -428,6 +462,10 @@ a {
     .home-container {
         height: fit-content;
 
+    }
+
+    .projects {
+        font-size: 7.2rem;
     }
 
     p {
