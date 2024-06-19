@@ -323,18 +323,18 @@
                         data-aos-duration="2000">Contact Me</h1>
                 </div>
                 <div>
-                    <form name="sentMessage" id="contactForm">
+                    <form name="contactForm" id="contactForm">
                         <div class="d-flex justify-content-stretch">
                             <div class="control-group w-50 me-2">
                                 <input type="text" class="form-control px-4 py-3" id="name" name="name"
                                     placeholder="Your Name" required="required"
-                                    data-validation-required-message="Please enter your name" fdprocessedid="tir85m">
+                                    data-validation-required-message="Please enter your name">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group w-50">
                                 <input type="email" class="form-control px-4 py-3" id="email" name="email"
                                     placeholder="Your Email" required="required"
-                                    data-validation-required-message="Please enter your email" fdprocessedid="mpqdk">
+                                    data-validation-required-message="Please enter your email">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -346,7 +346,7 @@
                         </div>
                         <div>
                             <button class="btn btn-primary btn-outline-secondary text-white" type="submit"
-                                id="sendMessageButton">Send
+                                value="Submit" id="submit">Send
                                 Message</button>
                         </div>
                     </form>
@@ -381,7 +381,6 @@
         +91 8464081814</marquee>
 
     <script src="script.js">
-
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -395,6 +394,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         AOS.init();
     </script>
