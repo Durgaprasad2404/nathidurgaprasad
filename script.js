@@ -1,3 +1,5 @@
+const logoEl = document.getElementById("logo");
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbxTZY9A3clfEhKXejrfmwV0AOkz1iA3R85_3VotuLBiee4yv65pomSwVEVU_hwfrSTM/exec";
 
@@ -13,4 +15,10 @@ form.addEventListener("submit", (e) => {
       window.location.reload();
     })
     .catch((error) => console.error("Error!", error.message));
+});
+
+// logo clicks reload
+
+logoEl.addEventListener("click", function () {
+  window.location.reload();
 });
